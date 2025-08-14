@@ -3,9 +3,8 @@ import {
   RouterProvider,
 } from "react-router";
 
-import './App.css'
 
-function App() {
+const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
@@ -23,5 +22,6 @@ function App() {
     </>
   )
 }
+
 
 export default App

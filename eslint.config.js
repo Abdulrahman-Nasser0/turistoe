@@ -26,4 +26,11 @@ export default defineConfig([
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
     },
   },
+  // Silence the react-refresh rule for all component files in src
+  {
+    files: ['src/**/*.{js,jsx,ts,tsx}'],
+    rules: {
+      'react-refresh/only-export-components': 'off',
+    },
+  },
 ])
