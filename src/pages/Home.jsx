@@ -1,18 +1,23 @@
 import Header from "@/components/ui/Header";
+import Hero from "@/components/ui/Hero";
 import React from "react";
 
 const Home = () => {
   return (
     <div
       className="min-h-[100vh] "
-      style={{
-        backgroundImage: "url('/bg-mobile.jpg')",
+      
+    >
+        {/* Background Overlay */}
+      <div
+        className="absolute -z-1 inset-0 pointer-events-none min-h-[100vh]"
+        style={{
+          backgroundImage: "url('/bg-mobile.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-      }}
-    >
-        {/* Background Overlay */}
+        }}
+      />
       <div
         className="absolute z-0 inset-0 pointer-events-none"
         style={{
@@ -23,6 +28,7 @@ const Home = () => {
 
       <div className="relative z-10">
         <Header/>
+        <Hero/>
       </div>
     </div>
   );
