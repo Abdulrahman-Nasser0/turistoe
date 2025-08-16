@@ -1,36 +1,15 @@
-import Header from "@/components/ui/Header";
-import Hero from "@/components/ui/Hero";
 import React from "react";
+import HeroSection from "@/pages/sections/HeroSection";
+import ContactSection from "./sections/ContactSection";
+import TripSection from "./sections/TripSection";
 
 const Home = () => {
   return (
-    <div
-      className="min-h-[100vh] "
-      
-    >
-        {/* Background Overlay */}
-      <div
-        className="absolute -z-1 inset-0 pointer-events-none min-h-[100vh]"
-        style={{
-          backgroundImage: "url('/bg-mobile.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        }}
-      />
-      <div
-        className="absolute z-0 inset-0 pointer-events-none"
-        style={{
-          background: "linear-gradient(to bottom, #003C82 0%, #003C8200 100%)",
-        }}
-      />
-
-
-      <div className="relative z-10">
-        <Header/>
-        <Hero/>
+      <div className="flex flex-col gap-26">
+        <HeroSection />
+        <ContactSection/>
+        <TripSection/>
       </div>
-    </div>
   );
 };
 
