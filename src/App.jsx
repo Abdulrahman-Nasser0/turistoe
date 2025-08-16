@@ -1,3 +1,4 @@
+import  Home  from "./pages/Home";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -8,7 +9,7 @@ const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <div>Home</div>,
+      element: <Home/>,
     },
     {
       path: "/about",
