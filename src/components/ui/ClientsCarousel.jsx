@@ -12,8 +12,7 @@ import { reviews } from "@/data/reviews";
 
 const ClientsCarousel = () => {
   return (
-    <div className="flex flex-col items-center w-full py-16 px-4">
-      <h2 className="text-3xl font-bold text-center mb-10">Our Happy Clients</h2>
+    <div className="flex flex-col items-center w-full  px-4">
       <div className="w-full max-w-7xl mx-auto mt-4">
         <Carousel opts={{
           align: "center",

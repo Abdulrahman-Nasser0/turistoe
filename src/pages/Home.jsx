@@ -2,14 +2,14 @@ import React from "react";
 import HeroSection from "@/pages/sections/HeroSection";
 import ContactSection from "./sections/ContactSection";
 import TripSection from "./sections/TripSection";
-import ClientsCarousel from "@/components/ui/ClientsCarousel";
+import ReviewsSection from "./sections/ReviewsSection";
 
 const Home = () => {
   return (
-      <div className="flex flex-col gap-26">
+      <div className="flex flex-col gap-8">
         <HeroSection />
         <ContactSection/>
-        <ClientsCarousel/>
+        <ReviewsSection/>
         <TripSection/>
       </div>
   );

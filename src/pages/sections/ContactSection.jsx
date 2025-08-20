@@ -4,7 +4,7 @@ import React from "react";
 
 const ContactSection = () => (
   <section className="p-6"  >
-    <h2 className="text-[2rem] font-bold text-center mb-10">Best Way to Travel</h2>
+    <h2 className="text-[2rem] font-bold text-center mt-10">Best Way to Travel</h2>
     <p className="text-center text-black mb-4">
       We are a travel agency that specializes in creating customized travel experiences for our clients. We believe that travel is a journey, not just a destination. We want to help our clients create memories that will last a lifetime.
     </p>
