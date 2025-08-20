@@ -2,7 +2,7 @@ import React from 'react'
 
 const ClientCard = ({ client }) => {
   return (
-    <div className='flex flex-col justify-center items-center gap-4  mx-auto'>
+    <div className='flex flex-col select-none justify-center items-center gap-4  mx-auto'>
         <div className='bg-[#ECF5FF] p-6 rounded-2xl w-[20rem] h-[12rem]'>
             <span className=''>{client.testimonial}</span>
         </div>
