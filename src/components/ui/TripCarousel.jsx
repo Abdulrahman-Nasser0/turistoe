@@ -56,7 +56,7 @@ const trips = [
 
 const TripCarousel = () => {
   return (
-    <Carousel className="absolute left-0 w-full">
+    <Carousel className="">
       <CarouselContent>
         {trips.map((trip, idx) => (
           <CarouselItem key={idx} className=" basis-1/1. px-2 my-4 ml-6">

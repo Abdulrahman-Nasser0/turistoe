@@ -1,10 +1,9 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
-// import { Button } from "./button";
 
 const ContactSection = () => (
   <section className="p-6">
-    <h2 className="text-[2rem] font-bold text-center mt-10">
+    <h2 className="text-[2rem] font-bold text-center mb-10">
       Best Way to Travel
     </h2>
     <p className="text-center text-black mb-4">

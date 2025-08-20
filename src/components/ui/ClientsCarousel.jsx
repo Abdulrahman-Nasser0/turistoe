@@ -12,7 +12,6 @@ import { reviews } from "@/data/reviews";
 
 const ClientsCarousel = () => {
   return (
-    <div className="flex flex-col items-center w-full  px-4">
       <div className="w-full max-w-7xl mx-auto mt-4">
         <Carousel opts={{
           align: "center",
@@ -29,7 +28,6 @@ const ClientsCarousel = () => {
             <CarouselNext className="hidden lg:flex absolute right-[35%] top-[26rem]" />
         </Carousel>
       </div>
-    </div>
   );
 };
 
