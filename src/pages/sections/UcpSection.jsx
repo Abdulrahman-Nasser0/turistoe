@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import Button from "@/components/ui/Button";
 import React from "react";
 
 const UcpSection = () => {
@@ -29,8 +29,7 @@ const UcpSection = () => {
         trip with us!{" "}
       </p>
       <Button
-        variant="outline"
-        className="text-white border-white px-14 py-8 my-8 text-2xl hover:bg-white/10"
+        className="text-white border-white hover:bg-white/10"
       >
         Contact Us
       </Button>

@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import LocationList from './LocationList'
+
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Button } from './button'
+import Button from "@/components/ui/Button";
 import { Calendar } from "@/components/ui/calendar"
 import GuestCounter from './GuestCounter'
 
@@ -63,7 +64,9 @@ const AccordionForm = () => {
             </AccordionItem>
             {/* Search Button */}
             <AccordionItem className={"flex justify-center"} value="item-3 ">
-                    <Button type="submit" variant="outline" className="text-[1.25rem] my-6 ">
+                    <Button type="submit"
+                        className={"my-8"}
+                        >
                       Search
                     </Button>
             </AccordionItem>

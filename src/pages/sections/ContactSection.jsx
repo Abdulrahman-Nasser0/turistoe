@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import Button from "@/components/ui/Button";
 import React from "react";
 
 const ContactSection = () => (
@@ -29,12 +29,7 @@ const ContactSection = () => (
       </div>
     </div>
     <div className="flex justify-center">
-      <Button
-        variant="outline"
-        className="text-[1.25rem] my-6 px-10 py-[1.74rem]"
-      >
-        Contact Us
-      </Button>
+      <Button>Contact Us</Button>
     </div>
   </section>
 );

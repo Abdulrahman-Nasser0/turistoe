@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../../components/ui/button";
+import Button from "@/components/ui/Button";
 
 const FooterSection = () => {
   return (
@@ -11,8 +11,12 @@ const FooterSection = () => {
             Subscribe to be the first to know about our new trips and additional
             promotions
           </p>
-          <input type="text" placeholder="Enter your email address" />
-          <button>Subscribe</button>
+          <input 
+            type="text" 
+            placeholder="Enter your email address"
+            className="py-2 px-4 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-gray-400 w-full mb-4"
+          />
+          <Button>Subscribe</Button>
         </div>
 
         <div className="flex flex-row justify-between gap-4">
