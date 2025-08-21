@@ -54,7 +54,7 @@ const Nav = () => {
         >
           <HamburgerIcon open={true} />
         </button>
-        <div className="flex flex-col items-center justify-center h-full gap-8">
+        <div className="flex flex-col items-center mt-60 h-full gap-8">
           {navItems.map((item) => (
             <Button
               key={item.label}
