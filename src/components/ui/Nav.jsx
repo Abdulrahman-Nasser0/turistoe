@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./Button";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -10,17 +11,17 @@ const navItems = [
 const HamburgerIcon = ({ open }) => (
   <div className="flex flex-col justify-center items-center w-6 h-6">
     <span
-      className={`block h-0.5 w-5 bg-white rounded transition-all duration-300 ${
+      className={`block h-0.5 w-5 ${!open ? "bg-white" : "bg-[#003C82]"} rounded transition-all duration-300 ${
         open ? "rotate-45 translate-y-1.5" : ""
       }`}
     />
     <span
-      className={`block h-0.5 w-5 bg-white   rounded my-1 transition-all duration-300 ${
+      className={`block h-0.5 w-5 ${!open ? "bg-white" : "bg-[#003C82] "} rounded my-1 transition-all duration-300 ${
         open ? "opacity-0" : ""
       }`}
     />
     <span
-      className={`block h-0.5 w-5 bg-white rounded transition-all duration-300 ${
+      className={`block h-0.5 w-5 ${!open ? " bg-white" : "bg-[#003C82]"} rounded transition-all duration-300 ${
         open ? "-rotate-45 -translate-y-1.5" : ""
       }`}
     />
@@ -32,29 +33,42 @@ const Nav = () => {
 
   return (
     <nav className="relative">
-      {/* Hamburger Button */}
+      {/* Open Menu Button */}
       <button
-        className="border-1 rounded-full p-3 flex items-center justify-center focus:outline-none"
-        onClick={() => setOpen((prev) => !prev)}
+        className="border-1 border-white rounded-full p-3 flex items-center justify-center focus:outline-none"
+        onClick={() => setOpen(true)}
         aria-label="Open navigation"
       >
-        <HamburgerIcon open={open} />
+        <HamburgerIcon open={false} />
       </button>
 
-      {/* Menu */}
-      {open && (
-        <div className="absolute top-14 right-0 bg-white rounded-xl shadow-lg py-4 px-6 flex flex-col gap-4 z-50 min-w-[150px]">
+      {/* Full Screen Menu */}
+      <div className={`fixed inset-0 bg-white transition-transform duration-500 ease-in-out transform ${
+        open ? "translate-x-0" : "translate-x-full"
+      } z-50`}>
+        {/* Close Button */}
+        <button
+          className="fixed top-18 right-6 border-1 border-[#003C82] rounded-full p-3 flex items-center justify-center focus:outline-none"
+          onClick={() => setOpen(false)}
+          aria-label="Close navigation"
+        >
+          <HamburgerIcon open={true} />
+        </button>
+        <div className="flex flex-col items-center justify-center h-full gap-8">
           {navItems.map((item) => (
-            <a
+            <Button
               key={item.label}
-              href={item.href}
-              className="text-blue-900 font-semibold hover:text-blue-700 transition-colors"
+              onClick={() => {
+                // Handle navigation here
+                setOpen(false);
+              }}
+              className=""
             >
               {item.label}
-            </a>
+            </Button>
           ))}
         </div>
-      )}
+      </div>
     </nav>
   );
 };
