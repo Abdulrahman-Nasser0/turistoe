@@ -35,7 +35,7 @@ const Nav = () => {
     <nav className="relative">
       {/* Open Menu Button */}
       <button
-        className="border-1 border-white rounded-full p-3 flex items-center justify-center focus:outline-none"
+        className="border-1 cursor-pointer border-white rounded-full p-3 flex items-center justify-center focus:outline-none"
         onClick={() => setOpen(true)}
         aria-label="Open navigation"
       >
@@ -48,7 +48,7 @@ const Nav = () => {
       } z-50`}>
         {/* Close Button */}
         <button
-          className="fixed top-18 right-6 border-1 border-[#003C82] rounded-full p-3 flex items-center justify-center focus:outline-none"
+          className="fixed top-18 right-6 cursor-pointer border-1 border-[#003C82] rounded-full p-3 flex items-center justify-center focus:outline-none"
           onClick={() => setOpen(false)}
           aria-label="Close navigation"
         >
