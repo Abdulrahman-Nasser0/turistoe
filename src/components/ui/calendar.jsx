@@ -7,7 +7,6 @@ import {
 import { DayPicker, getDefaultClassNames } from "react-day-picker";
 
 import { cn } from "@/lib/utils"
-import Button from "@/components/ui/Button"
 
 function Calendar({
   className,
@@ -41,7 +40,7 @@ function Calendar({
         months: cn("flex gap-4 flex-col md:flex-row relative", defaultClassNames.months),
         month: cn("flex flex-col w-full gap-4", defaultClassNames.month),
         nav: cn(
-          "flex items-center gap-1 w-full absolute top-0 inset-x-0 justify-between",
+          "px-2 pl-4 flex items-center gap-1 w-full absolute top-0 inset-x-0 justify-between",
           defaultClassNames.nav
         ),
         button_previous: cn(
@@ -71,17 +70,17 @@ function Calendar({
         table: "w-full border-collapse",
         weekdays: cn("flex", defaultClassNames.weekdays),
         weekday: cn(
-          "text-muted-foreground rounded-md flex-1 font-normal text-[0.8rem] select-none",
+          "text-muted-foreground rounded-md flex-1 font-normal text-[1rem] select-none",
           defaultClassNames.weekday
         ),
-        week: cn("flex w-full mt-2", defaultClassNames.week),
+        week: cn("flex w-full", defaultClassNames.week),
         week_number_header: cn("select-none w-(--cell-size)", defaultClassNames.week_number_header),
         week_number: cn(
           "text-[0.8rem] select-none text-muted-foreground",
           defaultClassNames.week_number
         ),
         day: cn(
-          "relative w-full h-full p-0 text-center [&:first-child[data-selected=true]_button]:rounded-l-md [&:last-child[data-selected=true]_button]:rounded-r-md group/day aspect-square select-none",
+          "relative flex items-center justify-center w-full h-full p-0 m-0 text-center [&:first-child[data-selected=true]_button]:rounded-l-md [&:last-child[data-selected=true]_button]:rounded-r-md group/day select-none",
           defaultClassNames.day
         ),
         range_start: cn("rounded-l-md bg-accent", defaultClassNames.range_start),
@@ -158,12 +157,12 @@ function CalendarDayButton({
       data-range-end={modifiers.range_end}
       data-range-middle={modifiers.range_middle}
       className={cn(
-        "hover:bg-gray-100 rounded-lg px-2 py-1 text-sm",
+        "hover:bg-gray-100 rounded-full text-sm m-0",
         "data-[selected-single=true]:bg-[#003C82] data-[selected-single=true]:text-white",
         "data-[range-middle=true]:bg-[#ECF5FF] data-[range-middle=true]:text-[#003C82]",
         "data-[range-start=true]:bg-[#003C82] data-[range-start=true]:text-white",
         "data-[range-end=true]:bg-[#003C82] data-[range-end=true]:text-white",
-        "flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 leading-none font-normal",
+        "inline-flex h-9 w-9 items-center justify-center leading-none font-normal",
         "group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10",
         "data-[range-end=true]:rounded-md data-[range-middle=true]:rounded-none data-[range-start=true]:rounded-md",
         defaultClassNames.day,

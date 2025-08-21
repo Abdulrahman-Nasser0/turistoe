@@ -1,6 +1,6 @@
 import React from "react";
 
-import AccordionForm from "../../components/ui/AccordionForm";
+import AccordionForm from "../../components/forms/AccordionForm";
 import Header from "@/components/ui/Header";
 
 const HeroSection = () => {
@@ -26,9 +26,7 @@ const HeroSection = () => {
         <div className="flex flex-col justify-center ">
           {/* Hero Heading */}
           <h1
-            className="text-center text-white font-inter text-[4rem] 
-              font-bold leading-none mt-16
-          
+            className="text-center text-white font-inter text-[4rem] md:text-[6rem] lg:text-[8rem]  lg:mt-[15rem] font-bold leading-none mt-16
           "
           >
             Explore Our Delightful World
