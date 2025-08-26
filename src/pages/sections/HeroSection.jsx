@@ -1,5 +1,5 @@
 import React from "react";
-
+import '@/styles/base/typography.css' 
 import AccordionForm from "../../components/forms/AccordionForm";
 import Header from "@/components/ui/Header";
 
@@ -21,12 +21,15 @@ const HeroSection = () => {
           background: "linear-gradient(to bottom, #003C82 0%, #003C8200 100%)",
         }}
       />
+
+
       <div className="relative z-10">
         <Header />
+        {/* Hero */}
         <div className="flex flex-col justify-center ">
           {/* Hero Heading */}
           <h1
-            className="text-center text-white font-inter text-[4rem] md:text-[6rem] lg:text-[8rem]  lg:mt-[15rem] font-bold leading-none mt-16
+            className="text-center text-white font-inter text-7xl font-bold leading-none mt-16 lg:mt-[15rem]
           "
           >
             Explore Our Delightful World

@@ -5,7 +5,7 @@ const Button = ({ children, className, type = "button", ...props }) => {
     <button
       type={type}
       className={`py-[0.9975rem] w-[14.3125rem] text-[#003C82] 
-        text-[1.25rem] border-1 rounded-4xl border-[#003C82] hover:bg-[#003C82] hover:text-white cursor-pointer   
+        text-xl border-1 rounded-4xl border-[#003C82] hover:bg-[#003C82] hover:text-white cursor-pointer   
         inline-flex items-center justify-center whitespace-nowrap font-medium transition-all shrink-0 outline-none 
         ${className}`}
       {...props}

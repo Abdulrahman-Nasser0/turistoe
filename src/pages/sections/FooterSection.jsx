@@ -3,11 +3,11 @@ import Button from "@/components/ui/Button";
 
 const FooterSection = () => {
   return (
-    <footer className="p-6 bg-[#003C82] text-white">
+    <footer className="p-6 bg-[#003C82] text-white -mt-[7rem]">
       <div className="flex flex-col gap-4">
         <div className="border-1 border-white p-6 rounded-3xl">
-          <h2 className="text-[1.5rem] font-bold  mb-6">Take a trip with us</h2>
-          <p className="mb-8 max-w-[16rem] text-[0.875rem]">
+          <h3 className="heading-3">Take a trip with us</h3>
+          <p className="paragraph text-start">
             Subscribe to be the first to know about our new trips and additional
             promotions
           </p>
@@ -21,23 +21,23 @@ const FooterSection = () => {
 
         <div className="flex flex-row justify-between gap-4">
           <div className="border-1 border-white p-6 rounded-3xl w-[50%]">
-            <h2 className="text-[1.5rem] font-bold  mb-6">About</h2>
+            <h3 className="heading-3">About</h3>
           </div>
 
           <div className="border-1 border-white p-6 rounded-3xl w-[50%]">
-            <h2 className="text-[1.5rem] font-bold  mb-6">Support</h2>
+            <h3 className="heading-3">Support</h3>
           </div>
         </div>
         <div className="border-1 border-white p-6 rounded-3xl">
-          <h2 className="text-[1.5rem] font-bold  mb-6">Turistoe</h2>
-          <p className="mb-8 text-[0.875rem]">
+          <h3 className="heading-3">Turistoe</h3>
+          <p className="paragraph text-start">
             We create unforgettable travel experiences that you will cherish all your life.
           </p>
           
         </div>
       </div>
       <div className="pt-6 text-center">
-        <p className="text-[0.875rem]">
+        <p className="text-sm">
           © 2025 Turistoe. All rights reserved.
         </p>
       </div>

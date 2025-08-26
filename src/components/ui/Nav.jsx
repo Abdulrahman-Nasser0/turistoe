@@ -62,7 +62,6 @@ const Nav = () => {
                 // Handle navigation here
                 setOpen(false);
               }}
-              className=""
             >
               {item.label}
             </Button>

@@ -28,14 +28,14 @@ const AccordionForm = () => {
         <Accordion className={"m-4 mt-16 md:mt-26 max-w-2xl mx-auto  rounded-2xl md:rounded-full bg-white md:flex md:justify-between md:items-center md:px-2"} type="single" collapsible>
             {/* Location Picker */}
             <AccordionItem className={"px-[1.125rem] py-1 text-[1.25rem] border-none relative"} value="item-1">
-                <AccordionTrigger >Location</AccordionTrigger>
+                <AccordionTrigger className={"text-xl"} >Location</AccordionTrigger>
                 <AccordionContent className="md:absolute md:top-full md:left-0 md:w-[300px] md:bg-white md:shadow-lg md:rounded-xl md:mt-2">
                     <LocationList selectedLocation={selectedLocation} setSelectedLocation={setSelectedLocation} />
                 </AccordionContent>
             </AccordionItem>
             {/* Date Picker */}
             <AccordionItem className={"px-[1.125rem] py-1 text-[1.25rem] relative"} value="item-2">
-                <AccordionTrigger>Date</AccordionTrigger>
+                <AccordionTrigger className={"text-xl"}>Date</AccordionTrigger>
                 <AccordionContent className="md:absolute md:top-full md:left-1/2 md:-translate-x-1/2 md:bg-white md:shadow-lg md:rounded-xl md:mt-2">
                     <Calendar
                         mode="single"
@@ -59,7 +59,7 @@ const AccordionForm = () => {
             </AccordionItem>
             {/* Guest Picker */}
             <AccordionItem className={"px-[1.125rem] py-1 text-[1.25rem] relative"} value="item-3">
-                <AccordionTrigger>Guest</AccordionTrigger>
+                <AccordionTrigger className={"text-xl"}>Guest</AccordionTrigger>
                 <AccordionContent className="p-4 md:absolute md:top-full md:right-0 md:w-[300px] md:bg-white md:shadow-lg md:rounded-xl md:mt-2">
                  <GuestCounter
                     label="Adults"
