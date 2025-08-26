@@ -36,14 +36,12 @@ const Nav = () => {
   return (
     <nav className="relative">
       {/* Desktop Menu */}
-      <div className="hidden lg:flex items-center justify-center rounded-full bg-[#003C82]/20 backdrop-blur-sm px-8 py-2">
+      <div className="hidden lg:flex items-center justify-center rounded-full border-1 border-white px-8 py-2">
         {navItems.map((item, index) => (
           <Link
             key={item.label}
             to={item.to}
-            className={`text-white hover:text-white/80 transition-colors px-6 py-2 text-sm font-medium
-              ${index !== navItems.length - 1 ? 'border-r border-white/20' : ''}
-            `}
+            className={"text-white hover:text-white/80 transition-colors px-6 py-2 text-sm font-medium"}
           >
             {item.label}
           </Link>
