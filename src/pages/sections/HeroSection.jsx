@@ -29,7 +29,7 @@ const HeroSection = () => {
         <div className="flex flex-col justify-center ">
           {/* Hero Heading */}
           <h1
-            className="text-center text-white font-inter text-7xl font-bold leading-none mt-16 lg:mt-[15rem]
+            className="text-center text-white font-inter text-7xl font-bold leading-none mt-16 max-w-[80rem] mx-auto lg:mt-[15rem] 
           "
           >
             Explore Our Delightful World
