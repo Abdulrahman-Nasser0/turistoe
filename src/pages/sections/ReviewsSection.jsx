@@ -5,7 +5,7 @@ const ReviewsSection = () => {
   return (
     <section>
       <div className="flex flex-col items-center w-full  ">
-        <h2 className="text-4xl font-bold text-center mb-10">
+        <h2 className="heading-2 text-center">
           Our Happy Clients
         </h2>
         <ClientsCarousel />

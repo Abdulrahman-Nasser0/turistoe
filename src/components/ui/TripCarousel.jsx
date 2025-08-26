@@ -36,6 +36,13 @@ const trips = [
     price: "$ 2100",
   },
   {
+    country: "Canada",
+    image: "/Canada.jpg",
+    title: "Banff National Park",
+    days: "10 days trip",
+    price: "$ 3000",
+  },
+  {
     country: "Indonesia",
     image: "/Indonesia.jpg",
     title: "Bali Island Escape",
@@ -49,14 +56,20 @@ const trips = [
     days: "9 days trip",
     price: "$ 2700",
   },
- 
+ {
+    country: "Peru",
+    image: "/Peru.jpg",
+    title: "Machu Picchu Trek",
+    days: "6 days trip",
+    price: "$ 2100",
+  },
   // Add more trips as needed
 ];
 
 
-const TripCarousel = () => {
+const TripCarousel = ({className}) => {
   return (
-    <Carousel className="">
+    <Carousel className={className}>
       <CarouselContent>
         {trips.map((trip, idx) => (
           <CarouselItem key={idx} className=" basis-1/1. px-2 my-4 ml-6">

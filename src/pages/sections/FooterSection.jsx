@@ -5,8 +5,9 @@ import SubscribeInput from "@/components/ui/SubscribeInput";
 const FooterSection = () => {
   return (
     <footer className="p-6 bg-[#003C82] text-white -mt-[7rem]">
-      <div className="flex flex-col gap-4">
-        <div className="border-1 border-white p-6 rounded-3xl">
+      <div className="flex flex-col gap-4 lg:flex-row max-w-7xl lg:mx-auto">
+        {/* Row 1*/}
+        <div className="border-1 border-white p-6 rounded-3xl order-1 lg:order-2">
           <h3 className="heading-3">Take a trip with us</h3>
           <p className="paragraph text-start pb-6">
             Subscribe to be the first to know about our new trips and additional
@@ -14,7 +15,8 @@ const FooterSection = () => {
           </p>
           <SubscribeInput />
         </div>
-        <div className="flex flex-row justify-between gap-4">
+        {/* Row 2*/}
+        <div className="flex flex-row justify-between gap-4 order-2">
           {/* About */}
           <div className="border-1 border-white p-6 rounded-3xl w-[50%]">
             <h3 className="heading-3">About</h3>
@@ -63,8 +65,9 @@ const FooterSection = () => {
             </ul>
           </div>
         </div>
+        {/* Row 3*/}
         {/* Turistoe Description */}
-        <div className="border-1 border-white p-6 rounded-3xl">
+        <div className="border-1 border-white p-6 rounded-3xl order-3 lg:order-1">
           <h3 className="heading-3">Turistoe</h3>
           <p className="paragraph text-start pb-6">
             We create unforgettable travel experiences that you will cherish all your life.

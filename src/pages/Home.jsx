@@ -8,7 +8,7 @@ import UcpSection from "./sections/UcpSection";
 
 const Home = () => {
   return (
-      <div className="flex flex-col gap-28">
+      <div className="flex flex-col gap-28 ">
         <HeroSection />
         <ContactSection/>
         <TripSection/>

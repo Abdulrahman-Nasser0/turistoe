@@ -2,7 +2,7 @@ import React from 'react'
 
 const TripCard = ({ trip }) => (
   <div
-    className="relative select-none rounded-3xl overflow-hidden shadow-lg h-[520px] flex flex-col justify-end"
+    className="relative select-none rounded-3xl overflow-hidden shadow-lg h-[30rem] md:h-[37rem] flex flex-col justify-end"
     style={{
       backgroundImage: `url('${trip.image}')`,
       backgroundSize: "cover",
