@@ -37,7 +37,7 @@ const Nav = () => {
     <nav className="relative">
       {/* Desktop Menu */}
       <div className="hidden lg:flex items-center justify-center rounded-full border-1 border-white px-8 py-2">
-        {navItems.map((item, index) => (
+        {navItems.map((item) => (
           <Link
             key={item.label}
             to={item.to}
