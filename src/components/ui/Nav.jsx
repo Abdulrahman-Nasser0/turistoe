@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "./Button";
 
 const navItems = [
-  { label: "Home", href: "/" },
-  { label: "Destinations", href: "/" },
-  { label: "About", href: "/" },
-  { label: "Contact", href: "/" },
+  { label: "About", to: "/" },
+  { label: "Trip", to: "/" },
+  { label: "Blog", to: "/" },
+  { label: "Reviews", to: "/" },
 ];
 
 const HamburgerIcon = ({ open }) => (
@@ -30,20 +31,36 @@ const HamburgerIcon = ({ open }) => (
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav className="relative">
-      {/* Open Menu Button */}
+      {/* Desktop Menu */}
+      <div className="hidden lg:flex items-center justify-center rounded-full bg-[#003C82]/20 backdrop-blur-sm px-8 py-2">
+        {navItems.map((item, index) => (
+          <Link
+            key={item.label}
+            to={item.to}
+            className={`text-white hover:text-white/80 transition-colors px-6 py-2 text-sm font-medium
+              ${index !== navItems.length - 1 ? 'border-r border-white/20' : ''}
+            `}
+          >
+            {item.label}
+          </Link>
+        ))}
+      </div>
+
+      {/* Mobile Menu Button */}
       <button
-        className="border-1 cursor-pointer border-white rounded-full p-3 flex items-center justify-center focus:outline-none"
+        className="lg:hidden border-1 cursor-pointer border-white rounded-full p-3 flex items-center justify-center focus:outline-none"
         onClick={() => setOpen(true)}
         aria-label="Open navigation"
       >
         <HamburgerIcon open={false} />
       </button>
 
-      {/* Full Screen Menu */}
-      <div className={`fixed inset-0 bg-white transition-transform duration-500 ease-in-out transform ${
+      {/* Mobile Full Screen Menu */}
+      <div className={`lg:hidden fixed inset-0 bg-white transition-transform duration-500 ease-in-out transform ${
         open ? "translate-x-0" : "translate-x-full"
       } z-50`}>
         {/* Close Button */}
@@ -59,7 +76,7 @@ const Nav = () => {
             <Button
               key={item.label}
               onClick={() => {
-                // Handle navigation here
+                navigate(item.to);
                 setOpen(false);
               }}
             >
