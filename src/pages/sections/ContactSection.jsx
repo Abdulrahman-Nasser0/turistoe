@@ -2,7 +2,7 @@ import Button from "@/components/ui/Button";
 import React from "react";
 
 const ContactSection = () => (
-<section className="p-6 text-base flex flex-col md:flex-row items-center gap-[2rem] w-full max-w-7xl mx-auto">
+<section className="p-10 md:p-18 text-base flex flex-col md:flex-row items-center gap-[2rem] w-full max-w-7xl mx-auto">
     {/** Content */}
     <div>
       <h2 className="heading-2 text-center md:text-start">
