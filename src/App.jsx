@@ -1,4 +1,5 @@
 import  Home  from "./pages/Home";
+import BookingFlow from "./pages/BookingFlow";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -10,6 +11,10 @@ const App = () => {
     {
       path: "/",
       element: <Home/>,
+    },
+    {
+      path: "/booking",
+      element: <BookingFlow/>,
     },
     {
       path: "/about",

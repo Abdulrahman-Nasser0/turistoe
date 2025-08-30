@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import LocationList from '@/components/ui/LocationList'
 import { Search } from 'lucide-react'
 import { validateBookingForm } from '@/validations/bookingValidation'
@@ -16,6 +17,7 @@ import GuestCounter from '@/components/ui/GuestCounter'
 import { cn } from '@/lib/utils'
 
 const AccordionForm = () => {
+    const navigate = useNavigate();
     const [selectedLocation, setSelectedLocation] = useState("Canada");
     const [date, setDate] = useState(new Date())
     const [adults, setAdults] = useState(1);
@@ -50,25 +52,16 @@ const AccordionForm = () => {
             // Simulate API call
             await new Promise(resolve => setTimeout(resolve, 1500));
             
-            // Success notification
-            setNotification({
-                type: 'success',
-                message: 'Booking request submitted successfully!'
+            // Navigate to booking flow with form data
+            navigate('/booking', {
+                state: {
+                    location: selectedLocation,
+                    date,
+                    adults,
+                    children
+                }
             });
-            console.log("Form submitted:", {
-                location: selectedLocation,
-                date,
-                adults,
-                children
-            });
-            // Reset form
-            setSelectedLocation("Canada");
-            setDate(new Date());
-            setAdults(1);
-            setChildren(0);
-            setErrors({});
-        } catch (error) {
-            console.log("Submission error:", error);
+        } catch {
             setNotification({
                 type: 'error',
                 message: 'Failed to submit booking request. Please try again.'
@@ -87,7 +80,7 @@ const AccordionForm = () => {
             onClose={() => setNotification(null)} 
           />
       )}
-      <form action="" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <Accordion className={"m-4 mt-16 md:mt-26 max-w-2xl mx-auto rounded-2xl md:rounded-full bg-white md:flex md:justify-between md:items-center md:px-2"} type="single" collapsible>
             {/* Location Picker */}
             <AccordionItem className={"px-[1.125rem] py-1 text-[1.25rem] border-none relative"} value="item-1">

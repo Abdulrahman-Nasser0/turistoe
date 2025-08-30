@@ -1,9 +1,8 @@
-import Button from "@/components/ui/Button";
 import React from "react";
 
 const UcpSection = () => {
   return (
-    <section className="p-6 py-20 text-base text-center text-white  relative">
+    <section className="p-6 py-50 text-base text-center text-white  relative">
       <div
         className="absolute inset-0 pointer-events-none -z-1"
         style={{
@@ -29,11 +28,7 @@ const UcpSection = () => {
         activities. And best of all, we'll give you a 10% discount on your first
         trip with us!{" "}
       </p>
-      <Button
-        className="text-white mt-6 md:mt-12 border-white hover:bg-white/10 md:mb-10"
-      >
-        Contact Us
-      </Button>
+
     </section>
   );
 };
