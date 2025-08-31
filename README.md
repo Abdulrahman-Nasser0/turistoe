@@ -89,6 +89,7 @@ src/
 │       ├── Header.jsx
 │       ├── TripCard.jsx
 │       └── ClientsCarousel.jsx
+        ...etc
 ├── pages/
 │   ├── Home.jsx
 │   └── sections/         
