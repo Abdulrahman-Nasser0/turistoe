@@ -11,6 +11,11 @@ A modern, responsive travel booking platform built with React and Vite, designed
 [![React Router](https://img.shields.io/badge/React_Router-7.8.2-orange)](https://reactrouter.com/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
+
+## 🚀 Live Demo
+Check out the live demo at [Turistoe](https://turistoe-woad.vercel.app/)
+
+
 ## ✨ Features
 
 - 🌎 Browse travel destinations with beautiful imagery
@@ -22,9 +27,6 @@ A modern, responsive travel booking platform built with React and Vite, designed
 - 🏨 Choose from Standard, Premium, and Luxury packages
 - 🛏️ Select room types (Single, Double, Suite, Family)
 
-
-## 🚀 Live Demo
-Check out the live demo at [Turistoe](https://turistoe-mbz894tj9-abdulrahman-nasser0s-projects.vercel.app/)
 
 
 ## 📸 Screenshots
