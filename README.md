@@ -67,6 +67,19 @@ Check out the live demo at [Turistoe](https://turistoe-woad.vercel.app/)
 
 Turistoe is a travel booking website that demonstrates modern React development practices. The project features a complete booking workflow from destination selection to payment confirmation, with responsive design and form validation.
 
+### 🎨 Design Challenge
+
+This project was built as a **Figma-to-Code challenge**, implementing a beautiful travel agency design from the Figma Community. The original design can be found here:
+
+**📐 Original Figma Design**: [Landing Page - Travel Agency](https://www.figma.com/design/i8Eo8EtV8VT8fOdFDj3AsE/Landing-Page---Travel-Agency.-Animated-website-template.--Community---Copy-?node-id=0-1&p=f&m=dev)
+
+The challenge involved:
+- ✅ **Pixel-perfect implementation** of the design system
+- ✅ **Responsive adaptation** for mobile, tablet, and desktop
+- ✅ **Interactive elements** and smooth animations
+- ✅ **Enhanced functionality** with a complete booking flow
+- ✅ **Modern React patterns** and best practices
+
 ## 🛠️ Built With
 
 - **React 19.1.1** - Frontend framework
